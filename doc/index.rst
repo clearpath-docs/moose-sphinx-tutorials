@@ -10,7 +10,7 @@ mobile robot. The tutorials topics are listed in the left column, and presented 
 
 .. _Moose: http://www.clearpathrobotics.com/moose/
 
-:doc:`Simulation <simulation>` is a logical place for most users to start, as this is universally applicable;
+:doc:`Simulation <MooseSimulation>` is a logical place for most users to start, as this is universally applicable;
 understanding how to effectively operate Moose in simulation is valuable whether you are in the testing
 phase with software you intend to ultimately deploy on a real Moose, or you do not have one and are
 simply exploring the platform's capabilities.
@@ -30,12 +30,7 @@ skip the introductory chapters and jump straight to these ones.
     :caption: Getting Started
 
     Overview <self>
-    simulation
-    network
-    navigation
-    startup
-    calibration
-    update
+    MooseSimulation
 
 .. toctree::
     :titlesonly:
