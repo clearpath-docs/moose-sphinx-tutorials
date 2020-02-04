@@ -37,8 +37,12 @@ Moose has a suite of optional payloads called accessories. These payloads can be
       <td><p><tt>0 0 0</tt> </p></td>
       <td><p>??? TODO</p></td>
     </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TWIST_MUX_EXTRAS</tt> </p></td>
+    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
+      <td><p>??? TODO</p></td>
+    </tr>
+    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP_CONTROL</tt> </p></td>
+      <td><p><tt>false</tt> </p></td>
       <td><p>??? TODO</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_NAVSAT_SMART6</tt> </p></td>
@@ -61,21 +65,17 @@ Moose has a suite of optional payloads called accessories. These payloads can be
       <td><p><tt>false</tt> </p></td>
       <td><p>??? TODO</p></td>
     </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP</tt> </p></td>
+    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TRACKS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
       <td><p>??? TODO</p></td>
     </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP_CONTROL</tt> </p></td>
-      <td><p><tt>false</tt> </p></td>
+    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TWIST_MUX_EXTRAS</tt> </p></td>
+      <td><p><tt>0</tt> </p></td>
       <td><p>??? TODO</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_URDF_EXTRAS</tt> </p></td>
       <td><p><tt>empty.urdf</tt> </p></td>
       <td><p>Path to a URDF file with additional modules connected to the robot</p></td>
-    </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TRACKS</tt> </p></td>
-      <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
     </tr>
     </tbody></table>
 
