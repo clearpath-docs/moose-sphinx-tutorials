@@ -31,7 +31,7 @@ Moose in a simple example world, run the following command:
 You should see the following window appear, or something like it. You can adjust the camera angle by
 clicking and dragging while holding CTRL, ALT, or the shift key:
 
-.. image:: graphics/placeholder.png
+.. image:: graphics/moose_simulator_gazebo.png
     :alt: Simulated Moose in the Race World.
 
 The window which you are looking at is the Gazebo Client. This window shows you the "true" state of the
@@ -39,23 +39,6 @@ simulated world which the robot exists in. It communicates on the backend with t
 is doing the heavy lifting of actually maintaining the simulated world. At the moment, you're running
 both the client and server locally on your own machine, but some advanced users may choose to run heavy
 duty simulations on separate hardware and connect to them over the network.
-
-Note that like Moose itself, Moose's simulator comes in multiple flavours called configs. A common
-one which you will need often is the ``front_laser`` config. If you close the Gazebo window, and then
-CTRL-C out of the terminal process, you can re-launch the simulator with a specific config:
-
-.. code-block:: bash
-
-    roslaunch moose_gazebo moose_world.launch config:=front_laser
-
-You should now see the simulator running with the simulated SICK LMS111 laser present:
-
-.. image:: gazebo-moose-race-laser.png
-    :alt: Simulated Moose in the Race World with SICK LMS111.
-
-Gazebo not only simulates the physical presence of the laser scanner, it also provides simulated data
-which reflects the robot's surroundings in its simulated world. We will visualize the simulated laser
-scanner data shortly.
 
 
 Launch rviz
@@ -75,7 +58,7 @@ visualizing any standard Moose config:
 
 You should see rviz appear:
 
-.. image:: rviz-moose-laser.png
+.. image:: graphics/moose_viz.png
     :alt: Moose with laser scanner in rviz.
 
 The rviz display only shows what the robot knows about its world, which presently, is nothing. Because the
