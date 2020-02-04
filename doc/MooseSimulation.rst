@@ -80,25 +80,3 @@ drive real Moose using this method, it will have moved in the real world.
 Once you start your own development, have your nodes send ``geometry_msgs/Twist`` commands to the ``cmd_vel``
 topic to drive Moose, either real or simulated. This is the standard ROS interface to differential-drive and
 holonomic ground vehicles.
-
-
-Visualizing Sensors
--------------------
-
-The rviz tool is capable of visualizing many common robotic sensors, as well as other data feeds which can give
-us clues as to what the robot is doing and why. A great place to start with this is adding the
-:roswiki:`LaserScan <rviz/DisplayTypes/LaserScan>` plugin to visualize the laser scans being produced by the
-simulated LMS111. In the left panel, click the "Add" button, then select the "Topics" tab, and then select the
-``front/scan`` topic:
-
-.. image:: rviz-visualize-laser.png
-    :alt: Adding a laser scan visualization to Moose.
-
-Click OK, and you should see laser scan points now visible in the rviz window, relative to the robot:
-
-.. image:: rviz-laser-scan.png
-    :alt: Visualizing Moose with simulated laser scans.
-
-If you use the interactive markers to drive around, you'll notice that the laser scan points move a little bit
-but generally stay where they are. This is the first step toward map making using :roswiki:`gmapping`, which
-is covered in the next tutorial, :doc:`navigation`.
