@@ -1,7 +1,7 @@
 Driving Moose
 ===============
 
-Moose can either :doc:`drive autonomously <MooseNavigation>`, be :doc:`controlled through RVIZ <MooseSimulation>`, or you
+Moose can either drive autonomously, be :doc:`controlled through ROS messages <MooseSimulation>`, or you
 can use the supplied remote control to teleoperate it.
 
 

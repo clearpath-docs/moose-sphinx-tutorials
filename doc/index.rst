@@ -15,10 +15,6 @@ understanding how to effectively operate Moose in simulation is valuable whether
 phase with software you intend to ultimately deploy on a real Moose, or you do not have one and are
 simply exploring the platform's capabilities.
 
-:doc:`Navigation <MooseNavigation>` is a follow-on to what is learned in the simulation tutorial, as navigation and
-map-making may be run in the simulated environment. However, this content is applicable to both the simulator
-and the real platform, if equipped with a laser scanner.
-
 :doc:`Driving <MooseDriving>` covers how to teleoperate Moose using the remote control, a well as safety procedures
 for operating the real robot.  Anyone working with a physical robot should be familiar with this section.
 
@@ -33,7 +29,6 @@ skip the introductory chapters and jump straight to these ones.
 
     Overview <self>
     MooseSimulation
-    MooseNavigation
     MooseDriving
     MooseNetwork
     MooseStartup
