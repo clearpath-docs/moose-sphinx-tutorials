@@ -1,7 +1,7 @@
 Driving Moose
 ===============
 
-Moose can either `drive autonomously <MooseNavigation>`, be `be controlled through RVIZ <MooseSimulation>`, or you
+Moose can either :doc:`drive autonomously <MooseNavigation>`, be :doc:`controlled through RVIZ <MooseSimulation>`, or you
 can use the supplied remote control to teleoperate it.
 
 
@@ -70,3 +70,23 @@ stop, simply twist the button in the direction indicated by the arrows.
 
 Whenever you need to perform maintenance on the robot we recommend engaging the emergency-stop if the robot cannot be
 fully powered down.
+
+
+Body Lights
+--------------
+
+Moose includes four RGB LED panels, located on the four corners of the chassis.  These lights express system status
+according to the table below.  In the absence of any of the low-level conditions, they can be commanded from ROS
+to display indications from autonomy or other high-level software.
+
+=======================   ========================================================================================================================================================================
+Color                     Meaning
+=======================   ========================================================================================================================================================================
+Solid Red                 MCU is not in contact with the PC.  Possibly due to a loose cable, firmware malfunction, or initialization error.
+Flashing Red              E-Stop is engaged.  Disenage the emergency stop to clear.
+Flashing Yellow           Motor drivers are initializing.  There is a short initialization period after startup and after disengaging the e-stop during which the robot cannot drive
+Headlights & Taillights   The front lights are solid white, rear lights are solid red.  This indicates the robot is in normal operation.  NOTE: only in this state can the lights be overridden by autonomy or other software.
+=======================   ========================================================================================================================================================================
+
+.. image:: graphics/taillight.jpg
+   :alt: Moose's taillight
