@@ -109,24 +109,27 @@ run:
 Advanced: Hosting a Wifi Access Point
 -------------------------------------
 
-The default network manager (wicd) only supports joining existing networks. It does not support creating its own wireless AP.
+The default network manager, ``wicd``, only supports joining existing networks. It does not support creating its own wireless AP.
 However, there is experimental support in Moose for a modern network manager called connman_, which does.
 
 .. _connman: https://01.org/connman
 
-.. warning:: You are unlikely to damage your hardware by switching Moose from wicd to connman, but it's possible
-             you could end up with a platform which will need to be :ref:`reflashed back to the factory state <scratch>` in
+.. warning::
+
+             You are unlikely to damage your hardware by switching Moose from wicd to connman, but it's possible
+             you could end up with a platform which will need to be `reflashed back to the factory state` in
              order to be usable. If you're comfortable with this and have backed up your data, proceed.
 
-Add the PPA which makes up-to-date connman releases available to Ubuntu 14.04, and install connman.
+Connman is available through the Ubuntu software repositories, and can be installed by running the following command:
 
 .. code-block:: bash
 
-    sudo add-apt-repository ppa:mikepurvis/network
-    sudo apt-get update
     sudo apt-get install connman
 
-Now edit the upstart job file in ``/etc/init/connman.conf``. Suggested configuration:
+Note that there is a similarly-named ``conman`` package, which is a serial console manager, not a network manager.  Be
+sure to include two N's in ``connman``.
+
+Once connman is installed, edit the upstart job file in ``/etc/init/connman.conf``. Suggested configuration:
 
 .. code-block:: bash
 
