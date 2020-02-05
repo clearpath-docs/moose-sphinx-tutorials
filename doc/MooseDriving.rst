@@ -1,6 +1,9 @@
 Driving Moose
 ===============
 
+.. image:: graphics/moose_driving_banner.png
+    :alt: Moose Driving
+
 Moose can either drive autonomously, be :doc:`controlled through ROS messages <MooseSimulation>`, or you
 can use the supplied remote control to teleoperate it.
 

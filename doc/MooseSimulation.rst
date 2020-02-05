@@ -1,6 +1,9 @@
 Simulating Moose
 =================
 
+.. image:: graphics/moose_sim_banner.png
+    :alt: Moose Simulation
+
 Whether you actually have a Moose robot or not, the Moose simulator is a great way to get started with ROS
 robot development. In this tutorial, we will go through the basics of starting Gazebo and Rviz and how to drive
 your Moose around.
