@@ -32,6 +32,7 @@ skip the introductory chapters and jump straight to these ones.
     MooseSimulation
     MooseNetwork
     MooseStartup
+    MooseUpdate
 
 .. toctree::
     :titlesonly:

@@ -48,6 +48,7 @@ rst_prolog = """
 .. |ros_distro| replace:: kinetic
 .. |ros_path| replace:: ``/opt/ros/kinetic``
 .. |rosd_path| replace:: ``/etc/ros/kinetic/ros.d``
+.. |dpkg_s_firmware| replace:: ``dpkg -s ros-kinetic-moose-firmware``
 """
 
 # substitutions for substitution-code-block -- THESE ONLY WORK IN CODE BLOCKS
