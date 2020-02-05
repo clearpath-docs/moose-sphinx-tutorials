@@ -29,8 +29,7 @@ MCU Firmware Update
 When you update packages, there is periodically a new version of Moose's firmware available. You will know this
 is the case in one of two ways:
 
-1. The firmware and PC are unable to connect to each other, which will be apparent if the two-arrow comms indicator
-   fails to come on after system bootup.
+1. The firmware and PC are unable to connect to each other, which will be apparent if TODO `what is the visual indication?`
 2. If the firmware version number in the ``/status`` message does not match the package version output by
    |dpkg_s_firmware|. In the future there will be an automated check for this which outputs
    a diagnostics warning when a firmware update is available to be applied.
