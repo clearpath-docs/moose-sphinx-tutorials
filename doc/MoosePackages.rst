@@ -1,5 +1,5 @@
-moose_description Package
-===========================
+Configuration & Environment Variables
+=========================================
 
 The moose_description package is the URDF robot description for Moose UGV.
 

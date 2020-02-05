@@ -15,7 +15,7 @@ understanding how to effectively operate Moose in simulation is valuable whether
 phase with software you intend to ultimately deploy on a real Moose, or you do not have one and are
 simply exploring the platform's capabilities.
 
-:doc:`Navigation <navigation>` is a follow-on to what is learned in the simulation tutorial, as navigation and
+:doc:`Navigation <MooseNavigation>` is a follow-on to what is learned in the simulation tutorial, as navigation and
 map-making may be run in the simulated environment. However, this content is applicable to both the simulator
 and the real platform, if equipped with a laser scanner.
 
@@ -25,13 +25,13 @@ skip the introductory chapters and jump straight to these ones.
 
 
 .. toctree::
-    :titlesonly:
-    :hidden:
-    :caption: Getting Started
+    :maxdepth: 3
+    :caption: Contents
 
     Overview <self>
     MooseSimulation
     MooseNetwork
+    MooseStartup
 
 .. toctree::
     :titlesonly:
