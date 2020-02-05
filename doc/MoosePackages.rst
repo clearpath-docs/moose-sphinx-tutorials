@@ -9,7 +9,7 @@ The moose_description package is the URDF robot description for Moose UGV.
 Overview
 ---------
 
-This package provides a `URDF <http://wiki.ros.org/urdf>`_ model of Jackal.  For an example launchfile to use in visualizing this model, see `moose_viz <http://wiki.ros.org/moose_viz>`_.
+This package provides a `URDF <http://wiki.ros.org/urdf>`_ model of Moose.  For an example launchfile to use in visualizing this model, see `moose_viz <http://wiki.ros.org/moose_viz>`_.
 
 .. image:: graphics/moose_urdf.png
 
