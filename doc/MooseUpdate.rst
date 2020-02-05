@@ -10,7 +10,8 @@ Getting New Packages
 --------------------
 
 Each Moose leaves the factory already configured to pull packages from http://packages.ros.org as well as
-http://packages.clearpathrobotics.com. To update your package and download new package versions, simply run:
+http://packages.clearpathrobotics.com. To update your package and download new package versions make sure that
+Moose is connected to the internet and run the following commands:
 
 .. code-block:: bash
 
