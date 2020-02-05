@@ -19,6 +19,9 @@ simply exploring the platform's capabilities.
 map-making may be run in the simulated environment. However, this content is applicable to both the simulator
 and the real platform, if equipped with a laser scanner.
 
+:doc:`Driving <MooseDriving>` covers how to teleoperate Moose using the remote control, a well as safety procedures
+for operating the real robot.  Anyone working with a physical robot should be familiar with this section.
+
 The remainder of the subjects are more applicable to the real robot, and have to do with configuring, using,
 and maintaining the platform. If you are a lab administrator rather than direct platform user, you may wish to
 skip the introductory chapters and jump straight to these ones.
@@ -31,8 +34,10 @@ skip the introductory chapters and jump straight to these ones.
     Overview <self>
     MooseSimulation
     MooseNavigation
+    MooseDriving
     MooseNetwork
     MooseStartup
+    MooseDriving
     MooseUpdate
 
 .. toctree::

@@ -54,7 +54,8 @@ rst_prolog = """
 # substitutions for substitution-code-block -- THESE ONLY WORK IN CODE BLOCKS
 substitutions = [
     ('|ros_distro|', 'kinetic'),
-    ('|ubuntu_distro', 'xenial'),
+    ('|ubuntu_distro|', 'xenial'),
+    ('|fw_path|', '/opt/ros/kinetic/share/moose_firmware/mcu.bin'),
 ]
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.

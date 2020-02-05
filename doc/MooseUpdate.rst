@@ -26,10 +26,15 @@ If you see any errors, please `get in touch`_ and we'll see if we can get you so
 MCU Firmware Update
 -------------------
 
+You need to use an external PC to update Moose's firmware.  You cannot use Moose's internal PC, as installing the
+firmware requires power-cycling the MCU.  Moose's MCU controls the power supply to the internal PC.  These instructions
+assume the external PC is running some flavour of Linux with the firmware's .bin file downloaded to it.
+
 When you update packages, there is periodically a new version of Moose's firmware available. You will know this
 is the case in one of two ways:
 
-1. The firmware and PC are unable to connect to each other, which will be apparent if TODO `what is the visual indication?`
+1. The firmware and PC are unable to connect to each other, which will be apparent if Moose's heartbeat LED does not flash
+   continuously while the robot is powered on; or
 2. If the firmware version number in the ``/status`` message does not match the package version output by
    |dpkg_s_firmware|. In the future there will be an automated check for this which outputs
    a diagnostics warning when a firmware update is available to be applied.
@@ -39,16 +44,43 @@ If new firmware is available, follow the below procedure to flash it to Moose's 
 1. Place Moose up on blocks and/or engage the emergency stop by pressing one of the red buttons located on each corner
    of the robot. Firmware loading does not usually result in unintended motion, but it's safest to ensure the robot
    cannot move accidentally.
-2. ??? TODO
+2. Open Moose's computer box, located on the rear of the robot
 
-Now, from Moose's PC (connected via SSH or screen/keyboard), execute:
+.. image:: graphics/moose_computer_box.jpg
+    :alt: The inside of Moose's computer box
+
+3. Insert a USB drive into Moose's PC, mount it, and run the following command to copy the firmware, replacing
+   the path with the location you mounted the USB drive to:
+
+.. substitution-code-block:: bash
+
+    cp |fw_path| /path/to/usb/drive
+
+Unmount and remove the USB drive when the command completes
+
+4. While pressing ``BT0`` on the MCU, connect the external PC to Moose's MCU using a USB cable.
+
+.. image:: graphics/moose_mcu_buttons.jpg
+    :alt: Moose's MUC's buttons
+
+5. After connecting the PC you should see a device with a name similar to
+   ``Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`` in the output of ``lsusb``.  Run the
+   following command, replacing ``001/005`` with the value appropriate to the Bus and Device where Moose's MCU is
+   connected:
 
 .. code-block:: bash
 
-    rosrun moose_firmware upload
+    sudo chmod 666 /dev/bus/usb/001/005
+
+Now mount the same USB drive from step 3 and run the following command, replacing the path with the mount point of
+the drive:
+
+.. code-block:: bash
+
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /path/to/usb/drive/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
-complete, ??? TODO
+complete you may disconnect the PC from the MCU and power-cycle the robot.
 
 
 .. _scratch:
