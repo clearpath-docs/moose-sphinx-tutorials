@@ -65,8 +65,8 @@ The rviz display only shows what the robot knows about its world, which presentl
 robot doesn't yet know about the barriers which exist in its Gazebo world, they're not shown here.
 
 
-Driving Moose
---------------
+Controlling Moose
+--------------------
 
 What is shown, however, is Moose's interactive markers. These are the simplest way to command your robot
 to move around. If you don't see them in your rviz display, select the Interact tool from the top toolbar.
