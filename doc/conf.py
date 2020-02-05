@@ -46,7 +46,7 @@ rst_prolog = """
 .. |ubuntu_distro| replace:: xenial
 .. |ubuntu_version| replace:: 16.04
 .. |ros_distro| replace:: kinetic
-.. |ros_path| replace:: ``/opt/ros/kinetic`
+.. |ros_path| replace:: ``/opt/ros/kinetic``
 .. |rosd_path| replace:: ``/etc/ros/kinetic/ros.d``
 """
 

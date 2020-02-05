@@ -12,7 +12,7 @@ Installation
 To get started with the Moose simulation, make sure you have a :roswiki:`working ROS installation <ROS/Installation>`
 set up on your Ubuntu desktop, and install the Moose-specific metapackages for desktop and simulation:
 
-.. substituton_code_block:: bash
+.. substitution-code-block :: bash
 
     sudo apt-get install ros-|ros_distro|-moose-simulator ros-|ros_distro|-moose-desktop
 
