@@ -28,11 +28,11 @@ skip the introductory chapters and jump straight to these ones.
     :caption: Contents
 
     Overview <self>
+    MooseInstallation
     MooseSimulation
     MooseDriving
     MooseNetwork
     MooseStartup
-    MooseDriving
     MooseUpdate
 
 .. toctree::

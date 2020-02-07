@@ -8,16 +8,9 @@ Whether you actually have a Moose robot or not, the Moose simulator is a great w
 robot development. In this tutorial, we will go through the basics of starting Gazebo and Rviz and how to drive
 your Moose around.
 
+.. note::
 
-Installation
-------------
-
-To get started with the Moose simulation, make sure you have a :roswiki:`working ROS installation <ROS/Installation>`
-set up on your Ubuntu desktop, and install the Moose-specific metapackages for desktop and simulation:
-
-.. substitution-code-block :: bash
-
-    sudo apt-get install ros-|ros_distro|-moose-simulator ros-|ros_distro|-moose-desktop
+  Before you can use this tutorial, make sure you have :doc:`installed Moose's software <MooseInstallation>`
 
 
 Launch Gazebo
@@ -83,51 +76,3 @@ drive real Moose using this method, it will have moved in the real world.
 Once you start your own development, have your nodes send ``geometry_msgs/Twist`` commands to the ``cmd_vel``
 topic to drive Moose, either real or simulated. This is the standard ROS interface to differential-drive and
 holonomic ground vehicles.
-
-
-Non-Debian Systems
-------------------------
-
-If you cannot install the Moose debian packages through the package manager, for example on an RPM-based Linux
-distribution, or you need the ability to modify the simulation, you can create a catkin workspace and clone the
-packages directly from github.  The following assumes  you have already installed ROS and catkin on your system.
-
-First create a workspace directory and initialize it:
-
-.. code-block:: bash
-
-    mkdir ~/moose_ws
-    cd ~/moose_ws
-    mkdir src
-    catkin_init_workspace src
-
-Next clone the Moose repositories using git:
-
-.. code-block:: bash
-
-    cd ~/moose_ws/src
-    git clone https://github.com/moose-cpr/moose.git
-    git clone https://github.com/moose-cpr/moose_simulator.git
-    git clone https://github.com/moose-cpr/moose_desktop.git
-
-Now install additional ROS dependencies:
-
-.. code-block:: bash
-
-    cd ~/moose_ws
-    rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-
-Finally build the workspace:
-
-.. code-block:: bash
-
-    cd ~/moose_ws
-    catkin_make
-
-You can now source your workspace's packages and run the simulation:
-
-.. code-block:: bash
-
-    cd ~/moose_ws
-    source devel/setup.bash
-    roslaunch moose_gazebo moose_world.launch
