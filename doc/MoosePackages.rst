@@ -90,4 +90,5 @@ Config:                               Description:
 base                                  Base Moose, includes IMU and GPS
 arm_mount                             Includes mounting points for am arm payload
 bulkhead                              ??? TODO
+empty                                 Includes no accessories at all
 ====================================  ====================================================
