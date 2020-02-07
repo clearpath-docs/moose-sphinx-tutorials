@@ -11,7 +11,7 @@ Overview
 
 This package provides a `URDF <http://wiki.ros.org/urdf>`_ model of Moose.  For an example launchfile to use in visualizing this model, see `moose_viz <http://wiki.ros.org/moose_viz>`_.
 
-.. image:: graphics/moose_urdf.png
+.. image:: graphics/moose_urdf_banner.png
 
 
 Accessories
