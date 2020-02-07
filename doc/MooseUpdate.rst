@@ -26,9 +26,9 @@ If you see any errors, please `get in touch`_ and we'll see if we can get you so
 MCU Firmware Update
 -------------------
 
-You need to use an external PC to update Moose's firmware.  You cannot use Moose's internal PC, as installing the
+You need to use an external PC to update Moose's MCU firmware.  You cannot use Moose's internal PC, as installing the
 firmware requires power-cycling the MCU.  Moose's MCU controls the power supply to the internal PC.  These instructions
-assume the external PC is running some flavour of Linux with the firmware's .bin file downloaded to it.
+assume the external PC is running some flavour of Linux with access to Clearpath's ROS packages.
 
 When you update packages, there is periodically a new version of Moose's firmware available. You will know this
 is the case in one of two ways:
@@ -49,14 +49,11 @@ If new firmware is available, follow the below procedure to flash it to Moose's 
 .. image:: graphics/moose_computer_box.jpg
     :alt: The inside of Moose's computer box
 
-3. Insert a USB drive into Moose's PC, mount it, and run the following command to copy the firmware, replacing
-   the path with the location you mounted the USB drive to:
+3. Download the Warthog firmware package onto your PC:
 
 .. substitution-code-block:: bash
 
-    cp |fw_path| /path/to/usb/drive
-
-Unmount and remove the USB drive when the command completes
+    sudo apt-get install ros-|ros_distro|-moose-firmware
 
 4. While pressing ``BT0`` on the MCU, connect the external PC to Moose's MCU using a USB cable.
 
@@ -72,12 +69,11 @@ Unmount and remove the USB drive when the command completes
 
     sudo chmod 666 /dev/bus/usb/001/005
 
-Now mount the same USB drive from step 3 and run the following command, replacing the path with the mount point of
-the drive:
+Now run the following command to upload the firmware:
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
-    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /path/to/usb/drive/mcu.bin
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/|ros_distro|/share/moose_firmware/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
 complete you may disconnect the PC from the MCU and power-cycle the robot.
