@@ -21,33 +21,30 @@ Moose has a suite of optional payloads called accessories. These payloads can be
 
 .. raw:: html
 
-    <table><tbody><tr> <td><p><strong>Variable</strong> </p></td>
+    <table><tbody>
+    <tr> <td><p><strong>Variable</strong> </p></td>
       <td><p><strong>Default</strong> </p></td>
       <td><p><strong>Description</strong> </p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_CONTROL_EXTRAS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>File location of a yaml contining additional control paramers to be overlaid on top of the standard parameters</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_GENERATOR</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is the platform equipped with a generator?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_IMU_XYZ</tt> </p></td>
       <td><p><tt>0 0 0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Position of the IMU in m/p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
-    </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_JOY_TELEOP_CONTROL</tt> </p></td>
-      <td><p><tt>false</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Enable teleop control for a standard wireless controller</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_NAVSAT_SMART6</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is the platform equipped with a Smart 6 GPS?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_NAVSAT_SMART6_BAUD</tt> </p></td>
       <td><p><tt>57600</tt> </p></td>
@@ -63,15 +60,15 @@ Moose has a suite of optional payloads called accessories. These payloads can be
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_OFFBOARD_STOP</tt> </p></td>
       <td><p><tt>false</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is a remote e-stop setup on the platform?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TRACKS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is the platform configured with track-drive?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_TWIST_MUX_EXTRAS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Add additional sources to be controlled by the twise mux of the platform</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>MOOSE_URDF_EXTRAS</tt> </p></td>
       <td><p><tt>empty.urdf</tt> </p></td>
