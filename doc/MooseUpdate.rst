@@ -51,7 +51,7 @@ If new firmware is available, follow the below procedure to flash it to Moose's 
 
 3. Download the Warthog firmware package onto your PC:
 
-.. substitution-code-block:: bash
+.. code-block :: bash
 
     sudo apt-get install ros-kinetic-moose-firmware
 
@@ -71,7 +71,7 @@ If new firmware is available, follow the below procedure to flash it to Moose's 
 
 Now run the following command to upload the firmware:
 
-.. substitution-code-block:: bash
+.. code-block :: bash
 
     dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/kinetic/share/moose_firmware/mcu.bin
 
