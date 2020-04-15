@@ -36,7 +36,7 @@ is the case in one of two ways:
 1. The firmware and PC are unable to connect to each other, which will be apparent if Moose's heartbeat LED does not flash
    continuously while the robot is powered on; or
 2. If the firmware version number in the ``/status`` message does not match the package version output by
-   |dpkg_s_firmware|. In the future there will be an automated check for this which outputs
+   ``dpkg -s ros-melodic-moose-firmware``. In the future there will be an automated check for this which outputs
    a diagnostics warning when a firmware update is available to be applied.
 
 If new firmware is available, follow the below procedure to flash it to Moose's MCU:
@@ -53,7 +53,7 @@ If new firmware is available, follow the below procedure to flash it to Moose's 
 
 .. substitution-code-block:: bash
 
-    sudo apt-get install ros-|ros_distro|-moose-firmware
+    sudo apt-get install ros-melodic-moose-firmware
 
 4. While pressing ``BT0`` on the MCU, connect the external PC to Moose's MCU using a USB cable.
 
@@ -73,7 +73,7 @@ Now run the following command to upload the firmware:
 
 .. substitution-code-block:: bash
 
-    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/|ros_distro|/share/moose_firmware/mcu.bin
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/melodic/share/moose_firmware/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
 complete you may disconnect the PC from the MCU and power-cycle the robot.
