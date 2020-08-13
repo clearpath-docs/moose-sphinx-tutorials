@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <package>
   <name>moose_tutorials</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>Moose's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
   <author email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</author>
 
   <license>BSD</license>
 
-  <!-- TODO: fix the URL -->
-  <url type="website">http://wiki.ros.org/ClearpathRobotics</url>
+  <url type="website">https://clearpathrobotics.com/moose-ugv/</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rosdoc_lite</build_depend>
