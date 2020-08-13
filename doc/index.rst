@@ -45,3 +45,4 @@ skip the introductory chapters and jump straight to these ones.
     :caption: Moose Packages
 
     MoosePackages
+    additional_sim_worlds
