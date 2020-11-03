@@ -113,3 +113,18 @@ in rad/s.
       float64 x
       float64 y
       float64 z
+
+Using a Game Controller
+------------------------
+
+You can use a game controller, e.g. a PS4 or Xbox One bluetooth controller, to drive Moose in the simulation.
+
+To do so, first pair your controller with your PC. Once paired, your controller should appear on your system as ``/dev/input/js*``
+where ``*`` is a number starting at zero. Make a note of what joy device your controller mapped to, and run the following commands,
+substituting ``js0`` as appropriate:
+
+export MOOSE_JOY_TELEOP=1
+export MOOSE_JOY_DEV=/dev/input/js0
+
+Then launch Gazebo as described earlier. You should be able to drive Moose by holding the left shoulder button and moving
+the left thumb stick.
